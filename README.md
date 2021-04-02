@@ -93,3 +93,76 @@ b = tüm anahtar kelimelerin toplam
 frekans değeri <br>
 x = benzerlik skoru <br>
 x = (a / b) * 100
+
+### Aşama 4-5
+Beşinci aşama dördüncü aşamanın devamı 
+niteliğinde olduğu için bu iki aşama web 
+sitesinde tek bir sayfada sunulmuştur.
+Dördüncü aşamada girilen URL ve URL 
+kümesi arasında kümenin tüm birinci ve 
+ikinci alt URL’leri de hesaba katılarak 
+farklı bir benzerlik skorlaması bulma algoritması tasarlanmıştır.
+
+![Adsız](https://user-images.githubusercontent.com/65903573/113419165-95763f00-93cf-11eb-831b-1fbc97cea5a6.png)
+
+Beşinci aşamada, dördüncü aşamada 
+kullanılan algoritmaya ek olarak 
+incelemesi yapılan URL içeriğinde geçen 
+eş anlamlı kelimelerin bulunmasını 
+sağlayan algoritma kullanılmıştır. Bu 
+kelimelerin “alakalı anahtar kelimeleri” 
+anahtar kelimelerin yanlarına yazılmıştır.
+Benzerlik skorlaması büyükten küçüğe 
+sıralanmıştır.
+
+![Adsız](https://user-images.githubusercontent.com/65903573/113419494-3b29ae00-93d0-11eb-91d5-f03ed0dd96c5.png)
+
+Dördüncü ve beşinci aşamaya dair genel 
+çıktı ek olarak sunulmuştur. *ek1
+
+## IV. Kaba Kod
+* Program çalıştı.
+* Kullanıcı “Aşama 1” sekmesine gitti ve 
+URL girişi yaparak “Ara” butonuna bastı.
+* ”Aşama 1” için çıktı görüntülendi.
+* Kullanıcı “Aşama 2|3” sekmesine gitti ve 
+iki adet URL girişi yaparak “Ara” 
+butonuna bastı.
+* URL’ler alınarak gerekli fonksiyonlara 
+gönderildi.
+* Fonksiyonlardan döndürülen anahtar 
+kelimelerin listesi, benzerlik skoruyla 
+beraber web sitesinde gösterildi.
+* Kullanıcı “Aşama 4|5” sekmesine gitti. 
+Bir adet URL ve bir adet URL kümesi 
+girdi (URL kümesi alt alta girilmelidir, 
+aksi takdirde hata ile karşılaşılır.).
+* Girilen URL’ler alt URL’leriyle birlikte 
+“ağaç yapısı” şeklinde gösterildi.
+* Her sitenin anahtar kelimeleri ve eğer 
+sitede varsa eş anlamlı kelimeleri yan yana 
+gösterildi.
+* Alt URL’ler de kullanılarak bulunan 
+benzerlik skoru gösterildi.
+
+## Referanslar
+* https://www.youtube.com/channel/UCZNZj
+3mkdCGJfCoKyl4bSYQ
+* https://flask.palletsprojects.com/en/1.1.x/#
+user-s-guide
+* https://getbootstrap.com/docs/4.0/gettingstarted/introduction/
+* https://www.geeksforgeeks.org/
+* https://www.moradam.com/
+* https://es-anlamli.gen.sx/
+* https://stackoverflow.com/
+* https://www.w3resource.com/
+* https://www.crummy.com/software/Beaut
+ifulSoup/bs4/doc/
+* http://repository.bilkent.edu.tr/handle/1
+1693/23211
+
+## ek1
+
+![Adsız](https://user-images.githubusercontent.com/65903573/113419649-8774ee00-93d0-11eb-8adb-5d21fca891af.png)
+![Adsız2](https://user-images.githubusercontent.com/65903573/113419664-9196ec80-93d0-11eb-90fc-781d6c6a061e.png)
+
