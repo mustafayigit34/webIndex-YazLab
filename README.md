@@ -148,22 +148,6 @@ gösterildi.
 * Alt URL’ler de kullanılarak bulunan 
 benzerlik skoru gösterildi.
 
-## Referanslar
-* https://www.youtube.com/channel/UCZNZj
-3mkdCGJfCoKyl4bSYQ
-* https://flask.palletsprojects.com/en/1.1.x/#
-user-s-guide
-* https://getbootstrap.com/docs/4.0/gettingstarted/introduction/
-* https://www.geeksforgeeks.org/
-* https://www.moradam.com/
-* https://es-anlamli.gen.sx/
-* https://stackoverflow.com/
-* https://www.w3resource.com/
-* https://www.crummy.com/software/Beaut
-ifulSoup/bs4/doc/
-* http://repository.bilkent.edu.tr/handle/1
-1693/23211
-
 ## ek1
 
 ![Adsız](https://user-images.githubusercontent.com/65903573/113419649-8774ee00-93d0-11eb-8adb-5d21fca891af.png)
