@@ -8,8 +8,7 @@ Terminale
 ```
 pip install flask
 ```
-yazılarak öncelikle Flask kurulumu yapılmalıdır. <br>
-Daha sonra terminalde proje klasörüne gelerek
+yazılarak öncelikle Flask kurulumu yapılmalıdır. Daha sonra terminalde proje klasörüne gelerek
 ```
 python webIndex.py
 ```
