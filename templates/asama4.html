@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+
+{% block  body %}
+<br>
+
+<form name=passdata action="/asama4" method="post">
+
+<label for="basic-url">Karsilastirma yapilacak URL'i giriniz.</label>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    
+  </div>
+  <input type="text" class="form-control" name="url1" aria-describedby="basic-addon3">
+</div>
+
+<label for="text-area">Web sitesi kümesinde bulunan URL'leri alt alta giriniz.</label>
+<div class="input-group">
+  <div class="input-group-prepend">
+  </div>
+  <textarea class="form-control" name="url2" aria-label="With textarea" style="height:300px"></textarea>
+</div>
+<br>
+<button type="submit" class="btn btn-secondary btn-lg btn-block">Ara</button>
+</form>
+
+{% if kontrol == True %}
+  <br><br><br><br>
+  <div>
+        <h3>Ağaç Yapısı</h3><br>
+          <ul>
+          {% for i,j,k,l in agacListe  %}
+            <li>{{i}}
+
+            {% if j >=75 %}
+
+            <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: {{j}}%" aria-valuenow="{{j}}" aria-valuemin="0" aria-valuemax="100">{{j}}</div>
+            </div>
+            
+            {% elif j >=50 %}
+            <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: {{j}}%" aria-valuenow="{{j}}" aria-valuemin="0" aria-valuemax="100">{{j}}</div>
+            </div>
+
+            {% elif j >=25 %}
+            <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: {{j}}%" aria-valuenow="{{j}}" aria-valuemin="0" aria-valuemax="100">{{j}}</div>
+            </div>
+
+            {% else %}
+            <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: {{j}}%" aria-valuenow="{{j}}" aria-valuemin="0" aria-valuemax="100"> {{j}}</div>
+            </div>
+            
+            {% endif %}
+
+            <ul>
+            {% for a,b in anahtarKelimeler %}
+            {% if a==i %}
+            <ol>{% for anahtar,deger in b %}
+            <li>{{anahtar}} -> {{deger}}</li>
+            
+            {% endfor %}</ol>
+            
+            {% else %}
+            {% endif %}
+            {% endfor %}
+            
+            </ul>
+            
+            
+            
+            </li>
+            <ul>
+            {% for x in k %}
+              <li>{{x}}</li>
+              <ul>
+            {% for a,b in anahtarKelimeler %}
+            {% if a==x %}
+            <ol>{% for anahtar,deger in b %}
+            <li>{{anahtar}} -> {{deger}}</li>
+            
+            {% endfor %}</ol>
+            
+            {% else %}
+            {% endif %}
+            {% endfor %}
+            
+            </ul>
+              <ul>
+              {% for y in l %}
+                {% if y.find(x)==0 %}
+                    <li>{{y}}</li>
+                    <ul>
+            {% for a,b in anahtarKelimeler %}
+            {% if a==y %}
+            <ol>{% for anahtar,deger in b %}
+            <li>{{anahtar}} -> {{deger}}</li>
+            
+            {% endfor %}</ol>
+            
+            {% else %}
+            {% endif %}
+            {% endfor %}
+            
+            </ul>
+                {% else %}
+                {% endif %}
+              {% endfor %}
+              </ul>
+             
+            {% endfor %}
+            </ul>
+            <br><br>
+          {% endfor %}
+          </ul>
+          <br><br><br><br>
+
+  </div>
+
+{% else %}
+{% endif %}
+
+{% endblock  body %}
+  
+{% block title %}
+Asama 4|5
+{% endblock title %}
