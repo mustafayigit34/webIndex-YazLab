@@ -23,4 +23,51 @@ flask, bootstrap, indeksleme, veri,
 semantik analiz, benzerlik skorlaması, 
 frekans
 
+## I. Giriş
+Bu projede web sitesi üzerinden kullanıcıdan URL’ler alınmış, ardından bu 
+URL’lerdeki metin içerikleri kullanılarak 
+web sitelerinde geçen kelimeler ve her kelimeye ait frekans değerleri bulunmuştur.
+Bu frekans değerleri ve birkaç parametreye 
+bağlı olarak anahtar kelime listesinin çıkarılması, çıkarılan anahtar kelimelere uygulanan bir formül yardımıyla benzerlik skoru bulunması işlemleri yapılmıştır. Ardından sitenin alt dallarının tespit edilmesiyle 
+site yapısı ortaya çıkarılmış ve bu yapıdaki 
+her URL’e aynı analizler uygulanmıştır.
+Son olarak sitede aynı içerik içerisinde kullanılmış olan eş anlamlı sözcüklerin semantik analiz yardımıyla saptanması işlemi 
+yapılmıştır. Kullanıcıların tüm bu işlemleri 
+yapabilmesi için bir web sitesi tasarlanmıştır. İşlemler aşama aşama kullanıcının anlayacağı şekle getirilerek bilgi olarak bu
+web sitesinde sunulmuştur.
+Bu projede Python web framework’ü olan 
+Flask, Bootstrap, internetten veri çekmek 
+için BeautifulSoup ve Request kütüphanelerinin bir arada kullanımına yönelik bir 
+çalışma gerçekleştirilmiştir. Aynı zamanda 
+öğrencilerin, proje isterlerlerinin çözümününe yönelik araştırdığı algoritmalar IDE
+aracılığıyla bilgisayar ortamına aktarılmıştır.
 
+## II. Temel Bilgiler
+Bu proje Python framework’ü Flask ile 
+geliştirilmiş olup, geliştirme ortamı olarak 
+"Visual Studio Code" kullanılmıştır. İlk 
+etapta proje için bir yol haritası çıkarılarak 
+ön hazırlık sürecine girilmiştir. Bu aşamada projenin isterlerine yönelik araştırmalar 
+gerçekleştirilmesi adına grup içerisinde bir 
+iş bölümü yapılmış olup elde edilen veriler 
+doğrultusunda projenin ana hatları ortaya 
+çıkarılmış ve büyük ölçüde karşılaşılabilecek problemler saptanıp çözümlendirilmeye çalışıldıktan sonra IDE ortamında projenin ilk adımları atılmıştır.
+Yapılan ön hazırlık sürecinde web sitesi 
+üzerinden URL’in alınması, alınan URL’in 
+sahip olduğu metin içeriğinin işlenmesi, işlenen içerik üzerinden proje isterlerinin nasıl gerçekleştirilebileceği gibi problemler
+üzerinde durulmuştur. Bu konulara ve
+problemlere yönelik gerekli araştırmalar 
+yapıldıktan sonra projeye şekil verme aşamasına gidilmiştir. 
+Proje ön hazırlık süreciyle birlikte yaklaşık
+on günlük bir süreçte tamamlanmıştır.
+
+## III. Yöntem
+Bu projede izlenilen yol aşağıda anlatılmıştır:
+
+### Aşama 1
+İlk olarak kullanıcıdan URL alınmıştır. 
+Alınan URL bir fonksiyona gönderilerek 
+sayfada geçen tüm kelimelerin frekansının 
+bulunması işlemi yapılmıştır. Kullanıcıya 
+sayfada geçen kelimeler frekanslarıyla beraber “büyükten küçüğe sıralanarak” listelenmiştir.
+![Adsız](https://user-images.githubusercontent.com/65903573/113418489-41b72600-93ce-11eb-93b5-1354cb5d934f.png)
