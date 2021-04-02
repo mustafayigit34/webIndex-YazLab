@@ -3,6 +3,19 @@ YazLab 4. Proje
 
 ### Daha fazla bilgi için --> [Proje Raporu](https://github.com/mustafayigit34/webIndex-YazLab/files/6249710/Rapor.pdf)
 
+## Kurulum/Çalıştırma
+Terminale
+```
+pip install flask
+```
+yazılarak öncelikle Flask kurulumu yapılmalıdır. <br>
+Daha sonra terminalde proje klasörüne gelerek
+```
+python webIndex.py
+```
+yazarak localhost'unuzda projeyi çalıştırıp kullanıma başlayabilirsiniz. <br>
+Bu kadar. 
+
 ## Özet
 Bu projede, projeyi yapan kişiler
 için web tabanlı uygulamaların çalışma 
