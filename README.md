@@ -152,5 +152,5 @@ benzerlik skoru gösterildi.
 
 ![Adsız](https://user-images.githubusercontent.com/65903573/113419649-8774ee00-93d0-11eb-8adb-5d21fca891af.png)
 ![Adsız2](https://user-images.githubusercontent.com/65903573/113419664-9196ec80-93d0-11eb-90fc-781d6c6a061e.png) <br>
-...
+... çıktı girilen URL'lere göre bu şekilde devam etmektedir.
 
