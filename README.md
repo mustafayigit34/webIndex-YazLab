@@ -13,7 +13,6 @@ yazılarak öncelikle Flask kurulumu yapılmalıdır. Daha sonra terminalde proj
 python webIndex.py
 ```
 yazarak localhost'unuzda projeyi çalıştırıp kullanıma başlayabilirsiniz. <br>
-Bu kadar. 
 
 ## Özet
 Bu projede, projeyi yapan kişiler
