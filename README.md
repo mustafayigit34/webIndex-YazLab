@@ -1,4 +1,7 @@
 # WEB İNDEKSLEME UYGULAMASI
+YazLab 4. Proje
+
+### Daha fazla bilgi için --> [Proje Raporu](https://github.com/mustafayigit34/webIndex-YazLab/files/6249710/Rapor.pdf)
 
 ## Özet
 Bu projede, projeyi yapan kişiler
@@ -164,5 +167,6 @@ ifulSoup/bs4/doc/
 ## ek1
 
 ![Adsız](https://user-images.githubusercontent.com/65903573/113419649-8774ee00-93d0-11eb-8adb-5d21fca891af.png)
-![Adsız2](https://user-images.githubusercontent.com/65903573/113419664-9196ec80-93d0-11eb-90fc-781d6c6a061e.png)
+![Adsız2](https://user-images.githubusercontent.com/65903573/113419664-9196ec80-93d0-11eb-90fc-781d6c6a061e.png) <br>
+...
 
