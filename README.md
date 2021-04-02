@@ -70,4 +70,26 @@ Alınan URL bir fonksiyona gönderilerek
 sayfada geçen tüm kelimelerin frekansının 
 bulunması işlemi yapılmıştır. Kullanıcıya 
 sayfada geçen kelimeler frekanslarıyla beraber “büyükten küçüğe sıralanarak” listelenmiştir.
-![Adsız](https://user-images.githubusercontent.com/65903573/113418489-41b72600-93ce-11eb-93b5-1354cb5d934f.png)
+
+![Adsız](https://user-images.githubusercontent.com/65903573/113418572-70350100-93ce-11eb-902a-c8c3aaecdefe.png)
+
+### Aşama 2-3
+İkinci aşama üçüncü aşamanın ön hazırlığı 
+niteliğinde olduğu için bu iki aşama web 
+sitesinde tek bir sayfada sunulmuştur.
+Birinci aşamadaki kelime frekansları bulma fonksiyonu ve “title” etiketi üzerinden
+kelime bulma fonksiyonu kullanılarak bir 
+anahtar kelime listesi bulma algoritması tasarlanmıştır. Ve tüm anahtar kelimeler alt 
+alta listelenmiştir.
+
+![Adsız](https://user-images.githubusercontent.com/65903573/113418813-e2a5e100-93ce-11eb-91bb-49242d7c1715.png)
+
+Üçüncü aşamada ise listelenilen bu anahtar 
+kelimelerden faydalanılarak benzerlik
+skorlaması yapılmıştır. Benzerlik skorlamasında kullanılan formül şu şekildedir: <br>
+a = ortak anahtar kelimelerin toplam 
+frekans değeri <br>
+b = tüm anahtar kelimelerin toplam 
+frekans değeri <br>
+x = benzerlik skoru <br>
+x = (a / b) * 100
